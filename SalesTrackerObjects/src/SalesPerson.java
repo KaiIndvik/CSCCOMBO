@@ -2,16 +2,24 @@
 public class SalesPerson {
 	
 	private String name;
-	private static int IDCount = 1;
-	private int ID;
+	private static int IDCounter = 1; //this is a static int, that stays with the class. It gets iterated every time the SalesPerson constructor gets called. 
+	private  int ID = 1; // this is the ID variable that gets assigned to and stays with the object that is created by the constructor. 
 	private double sales;
 
+	
+	// Constructor
 	public SalesPerson(String name, double sales) {
 		this.name = name;
 		this.sales = sales;
-		this.ID = IDCount;
-		IDCount++;
+		this.ID = IDCounter;
+		IDCounter++;
 		
+	}
+	
+	// Getters and Setters/Accessors and Mutators
+	
+	public int getID() {
+		return ID;
 	}
 
 	public String getName() {
@@ -31,10 +39,11 @@ public class SalesPerson {
 	}
 	
 	
-
+	//To String
+	
 	@Override
 	public String toString() {
-		return "SalesPerson [name=" + name + "ID number: " + ID + ", sales=" + sales + "]";
+		return "Salesperson Name: " + name + "ID number: " + ID + " Sales: $" + sales;
 	}
 	
 	

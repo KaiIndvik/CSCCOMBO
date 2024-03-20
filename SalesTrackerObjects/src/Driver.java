@@ -1,11 +1,5 @@
 import java.util.Scanner;
 
-
-
-
-
-
-
 //******************************************************************
 //		In this project, we are going to be creating a sales tracking program.
 //		It will allow the user to specify a number of salespeople, and it will create an array of SalesPerson objects.
@@ -14,7 +8,8 @@ import java.util.Scanner;
 //		We will also write three methods: 
 //		One that looks through the array, and returns the salesperson with the most sales.
 //		One that looks through the array, and returns the salesperson with the lowest sales.
-//		One that looks through the array, and returns a new array of salespersons whos Sales are greater than or equal to a value that the user inputs. 
+//		One that looks through the array, and returns a new array of salespeople whose Sales are greater than or equal to a value that the user inputs. 
+
 public class Driver {
 	public static void main(String[] args) {
 		// Creates Scanner

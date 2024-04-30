@@ -3,7 +3,7 @@ public class howManyCat {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(howManyCat(" cat abc cat ho cat"));
+		System.out.println(howManyCat("abc ho cat"));
 		
 	}
 	

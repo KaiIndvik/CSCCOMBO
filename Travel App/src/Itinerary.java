@@ -17,8 +17,8 @@ public class Itinerary {
 	}
 
 
-	public void setFlightReservation(String flightNumber, Calendar flightDate, Calendar returnDate) {
-		FlightReservation reservation = new FlightReservation(flightNumber,flightDate,returnDate);
+	public void setFlightReservation(String flightNumber, Calendar departDate, Calendar returnDate) {
+		FlightReservation reservation = new FlightReservation(flightNumber,departDate,returnDate);
 		this.flightReservation = reservation;
 	}
 
@@ -28,14 +28,15 @@ public class Itinerary {
 	}
 
 
-	public void setHotelReservation(HotelReservation hotelReservation) {
-		this.hotelReservation = hotelReservation;
+	public void setHotelReservation(String hotelName, String roomType, Calendar checkIn, Calendar checkOut) {
+		HotelReservation reservation = new HotelReservation(hotelName, roomType, checkIn, checkOut);
+		this.hotelReservation = reservation;
 	}
 
 
 	@Override
 	public String toString() {
-		return "Itinerary [flightReservation=" + flightReservation + ", hotelReservation=" + hotelReservation + "]";
+		return "Itinerary: \nFlight Reservation: " + flightReservation + "\nhotelReservation=" + hotelReservation + "]";
 	}
 	
 	

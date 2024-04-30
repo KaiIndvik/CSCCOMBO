@@ -4,10 +4,12 @@ public class SalesTracker {
 
 	public static void main(String[] args) {
 		//Creates Scanner
+		String str = "Hello";
 		Scanner scn = new Scanner(System.in); 
 		
+		
 		//Asks user for how many salespeople there are
-		System.out.println("How many salespeople would you like to enter information for?");
+		System.out.println("How many sales people would you like to enter information for?");
 		int numSalesPeople = scn.nextInt();
 		
 		//initializes some variables
